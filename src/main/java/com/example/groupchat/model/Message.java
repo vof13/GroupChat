@@ -13,7 +13,7 @@ public class Message {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    private LocalDateTime dateTime;
+    private String dateTime;
     private String message;
 
     public User getUser() {
@@ -32,11 +32,11 @@ public class Message {
         this.id = id;
     }
 
-    public LocalDateTime getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
+    public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
 

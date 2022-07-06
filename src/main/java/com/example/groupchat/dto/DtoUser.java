@@ -1,12 +1,6 @@
-package com.example.groupchat.model;
+package com.example.groupchat.dto;
 
-import javax.persistence.*;
-
-@Entity
-public class User {
-
-    @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+public class DtoUser {
     private int id;
     private String sessionId;
     private String name;
@@ -34,6 +28,4 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-
-
 }
